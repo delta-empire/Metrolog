@@ -12,4 +12,19 @@ S.N.Pavlov 2025</string>
     <string name="settings_placeholder">Раздел настроек в разработке</string>
     <string name="option_scale_signal">Шкала-сигнал</string>
     <string name="option_units">Единицы измерения</string>
+    <string name="scale_type_label">Тип шкалы</string>
+    <string name="scale_type_linear">Линейная шкала</string>
+    <string name="scale_type_linear_desc">Линейная, убывающая шкала</string>
+    <string name="scale_type_quadratic">Квадратичная шкала</string>
+    <string name="scale_type_quadratic_desc">Квадратичная, убывающая шкала</string>
+    <string name="scale_type_root">Корнеизвлекающая шкала</string>
+    <string name="scale_type_root_desc">Корнеизвлекающая, убывающая шкала</string>
+    <string name="physical_quantity_label">Физическая величина</string>
+    <string name="unified_signal_label">Унифицированный сигнал</string>
+    <string name="scale_start_hint">Начало</string>
+    <string name="scale_end_hint">Конец</string>
+    <string name="scale_value_hint">Физическая величина</string>
+    <string name="signal_start_hint">Начало</string>
+    <string name="signal_end_hint">Конец</string>
+    <string name="signal_value_hint">Унифицированный сигнал</string>
 </resources>

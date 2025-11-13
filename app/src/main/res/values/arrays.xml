@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="scale_types">
+        <item>@string/scale_type_linear</item>
+        <item>@string/scale_type_linear_desc</item>
+        <item>@string/scale_type_quadratic</item>
+        <item>@string/scale_type_quadratic_desc</item>
+        <item>@string/scale_type_root</item>
+        <item>@string/scale_type_root_desc</item>
+    </string-array>
+</resources>
