@@ -1,5 +1,6 @@
 package site.metrolog.metrolog;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -79,11 +81,11 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.main_list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        List<String> options = Arrays.asList(
-                getString(R.string.option_scale_signal),
-                getString(R.string.option_units)
+        List<Integer> options = Arrays.asList(
+                R.string.option_scale_signal,
+                R.string.option_units
         );
-        recyclerView.setAdapter(new OptionsAdapter(options));
+        recyclerView.setAdapter(new OptionsAdapter(options, this::handleOptionClick));
 
         mainContentView = findViewById(R.id.main);
         bannerAdView = findViewById(R.id.ad_container_view);
@@ -166,12 +168,22 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    private void handleOptionClick(@StringRes int optionResId) {
+        if (optionResId == R.string.option_scale_signal) {
+            startActivity(new Intent(this, ScaleSignalActivity.class));
+        } else if (optionResId == R.string.option_units) {
+            Toast.makeText(this, R.string.settings_placeholder, Toast.LENGTH_SHORT).show();
+        }
+    }
+
     private static class OptionsAdapter extends RecyclerView.Adapter<OptionsAdapter.OptionViewHolder> {
 
-        private final List<String> items;
+        private final List<Integer> items;
+        private final OnOptionClickListener listener;
 
-        OptionsAdapter(List<String> items) {
+        OptionsAdapter(List<Integer> items, OnOptionClickListener listener) {
             this.items = items;
+            this.listener = listener;
         }
 
         @NonNull
@@ -184,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull OptionViewHolder holder, int position) {
-            holder.bind(items.get(position));
+            holder.bind(items.get(position), listener);
         }
 
         @Override
@@ -200,9 +212,14 @@ public class MainActivity extends AppCompatActivity {
                 titleView = itemView.findViewById(R.id.option_title);
             }
 
-            void bind(String title) {
-                titleView.setText(title);
+            void bind(@StringRes int titleResId, OnOptionClickListener listener) {
+                titleView.setText(titleResId);
+                itemView.setOnClickListener(v -> listener.onOptionClick(titleResId));
             }
+        }
+
+        interface OnOptionClickListener {
+            void onOptionClick(@StringRes int optionResId);
         }
     }
 }
