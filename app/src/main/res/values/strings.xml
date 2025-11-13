@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Metrolog</string>
+    <string name="nav_home">Главная</string>
+    <string name="nav_version">Версия приложения</string>
+    <string name="nav_settings">Настройки</string>
+    <string name="drawer_open">Открыть меню</string>
+    <string name="drawer_close">Закрыть меню</string>
+    <string name="version_dialog_message">МЕТРОЛОГ
+version 0.1
+S.N.Pavlov 2025</string>
+    <string name="ok">ОК</string>
+    <string name="settings_placeholder">Раздел настроек в разработке</string>
+    <string name="option_scale_signal">Шкала-сигнал</string>
+    <string name="option_units">Единицы измерения</string>
 </resources>
