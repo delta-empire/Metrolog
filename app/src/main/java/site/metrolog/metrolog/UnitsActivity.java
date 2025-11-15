@@ -57,7 +57,8 @@ public class UnitsActivity extends AppCompatActivity {
 
         List<Integer> items = Arrays.asList(
                 R.string.units_option_temperature,
-                R.string.units_option_acceleration
+                R.string.units_option_acceleration,
+                R.string.units_option_time
         );
         recyclerView.setAdapter(new UnitsAdapter(items, this::handleUnitClick));
 
@@ -84,6 +85,8 @@ public class UnitsActivity extends AppCompatActivity {
             startActivity(new Intent(this, TemperatureConversionActivity.class));
         } else if (optionResId == R.string.units_option_acceleration) {
             startActivity(new Intent(this, AccelerationConversionActivity.class));
+        } else if (optionResId == R.string.units_option_time) {
+            startActivity(new Intent(this, TimeConversionActivity.class));
         }
     }
 
