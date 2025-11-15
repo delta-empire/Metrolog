@@ -57,6 +57,7 @@ public class UnitsActivity extends AppCompatActivity {
 
         List<Integer> items = Arrays.asList(
                 R.string.units_option_temperature,
+                R.string.units_option_speed,
                 R.string.units_option_acceleration,
                 R.string.units_option_time,
                 R.string.units_option_pressure
@@ -84,6 +85,8 @@ public class UnitsActivity extends AppCompatActivity {
     private void handleUnitClick(@StringRes int optionResId) {
         if (optionResId == R.string.units_option_temperature) {
             startActivity(new Intent(this, TemperatureConversionActivity.class));
+        } else if (optionResId == R.string.units_option_speed) {
+            startActivity(new Intent(this, SpeedConversionActivity.class));
         } else if (optionResId == R.string.units_option_acceleration) {
             startActivity(new Intent(this, AccelerationConversionActivity.class));
         } else if (optionResId == R.string.units_option_time) {
