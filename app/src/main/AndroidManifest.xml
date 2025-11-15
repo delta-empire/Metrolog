@@ -15,6 +15,10 @@
             android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION"
             android:value="false" />
         <activity
+            android:name=".TimeConversionActivity"
+            android:exported="false"
+            android:parentActivityName=".UnitsActivity" />
+        <activity
             android:name=".TemperatureConversionActivity"
             android:exported="false"
             android:parentActivityName=".UnitsActivity" />
