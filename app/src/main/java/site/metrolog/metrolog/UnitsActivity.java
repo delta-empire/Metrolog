@@ -26,7 +26,7 @@ import com.yandex.mobile.ads.common.AdRequest;
 import com.yandex.mobile.ads.common.AdRequestError;
 import com.yandex.mobile.ads.common.ImpressionData;
 
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.List;
 
 public class UnitsActivity extends AppCompatActivity {
@@ -55,7 +55,10 @@ public class UnitsActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.units_list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        List<Integer> items = Collections.singletonList(R.string.units_option_temperature);
+        List<Integer> items = Arrays.asList(
+                R.string.units_option_temperature,
+                R.string.units_option_acceleration
+        );
         recyclerView.setAdapter(new UnitsAdapter(items, this::handleUnitClick));
 
         ViewCompat.setOnApplyWindowInsetsListener(mainContentView, (v, insets) -> {
@@ -79,6 +82,8 @@ public class UnitsActivity extends AppCompatActivity {
     private void handleUnitClick(@StringRes int optionResId) {
         if (optionResId == R.string.units_option_temperature) {
             startActivity(new Intent(this, TemperatureConversionActivity.class));
+        } else if (optionResId == R.string.units_option_acceleration) {
+            startActivity(new Intent(this, AccelerationConversionActivity.class));
         }
     }
 
