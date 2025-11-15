@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         if (optionResId == R.string.option_scale_signal) {
             startActivity(new Intent(this, ScaleSignalActivity.class));
         } else if (optionResId == R.string.option_units) {
-            Toast.makeText(this, R.string.settings_placeholder, Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, UnitsActivity.class));
         }
     }
 
