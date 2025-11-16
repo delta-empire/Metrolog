@@ -62,7 +62,8 @@ public class UnitsActivity extends AppCompatActivity {
                 R.string.units_option_speed,
                 R.string.units_option_acceleration,
                 R.string.units_option_time,
-                R.string.units_option_pressure
+                R.string.units_option_pressure,
+                R.string.units_option_density
         );
         recyclerView.setAdapter(new UnitsAdapter(items, this::handleUnitClick));
 
@@ -99,6 +100,8 @@ public class UnitsActivity extends AppCompatActivity {
             startActivity(new Intent(this, TimeConversionActivity.class));
         } else if (optionResId == R.string.units_option_pressure) {
             startActivity(new Intent(this, PressureConversionActivity.class));
+        } else if (optionResId == R.string.units_option_density) {
+            startActivity(new Intent(this, DensityConversionActivity.class));
         }
     }
 

@@ -43,6 +43,10 @@
             android:exported="false"
             android:parentActivityName=".UnitsActivity" />
         <activity
+            android:name=".DensityConversionActivity"
+            android:exported="false"
+            android:parentActivityName=".UnitsActivity" />
+        <activity
             android:name=".UnitsActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
