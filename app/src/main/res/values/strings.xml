@@ -20,11 +20,13 @@ S.N.Pavlov 2025</string>
     <string name="units_option_acceleration">Ускорение</string>
     <string name="units_option_time">Время</string>
     <string name="units_option_pressure">Давление</string>
+    <string name="units_option_density">Плотность</string>
     <string name="temperature_screen_title">Преобразование температуры</string>
     <string name="speed_screen_title">Преобразование скорости</string>
     <string name="acceleration_screen_title">Преобразование ускорения</string>
     <string name="time_screen_title">Преобразование времени</string>
     <string name="pressure_screen_title">Преобразование давления</string>
+    <string name="density_screen_title">Преобразование плотности</string>
     <string name="mass_screen_title">Преобразование массы</string>
     <string name="length_screen_title">Преобразование длины</string>
     <string name="temperature_block_si">Международная система (СИ)</string>
@@ -90,6 +92,25 @@ S.N.Pavlov 2025</string>
     <string name="pressure_tsf_us_hint">Давление в tsf (США)</string>
     <string name="pressure_tsi_uk_hint">Давление в tsi (Британия)</string>
     <string name="pressure_tsf_uk_hint">Давление в tsf (Британия)</string>
+    <string name="density_kg_m3_hint">Плотность в килограммах на кубический метр</string>
+    <string name="density_t_m3_hint">Плотность в тоннах на кубический метр</string>
+    <string name="density_g_m3_hint">Плотность в граммах на кубический метр</string>
+    <string name="density_mg_m3_hint">Плотность в миллиграммах на кубический метр</string>
+    <string name="density_kg_l_hint">Плотность в килограммах на литр</string>
+    <string name="density_g_l_hint">Плотность в граммах на литр</string>
+    <string name="density_g_ml_hint">Плотность в граммах на миллилитр</string>
+    <string name="density_lb_yd3_hint">Плотность в фунтах на кубический ярд</string>
+    <string name="density_lb_ft3_hint">Плотность в фунтах на кубический фут</string>
+    <string name="density_lb_in3_hint">Плотность в фунтах на кубический дюйм</string>
+    <string name="density_lb_gal_hint">Плотность в фунтах на галлон (США)</string>
+    <string name="density_lb_bu_hint">Плотность в фунтах на бушель</string>
+    <string name="density_oz_yd3_hint">Плотность в унциях на кубический ярд</string>
+    <string name="density_oz_ft3_hint">Плотность в унциях на кубический фут</string>
+    <string name="density_oz_in3_hint">Плотность в унциях на кубический дюйм</string>
+    <string name="density_oz_gal_hint">Плотность в унциях на галлон (США)</string>
+    <string name="density_oz_bu_hint">Плотность в унциях на бушель</string>
+    <string name="density_lb_gal_uk_hint">Плотность в фунтах на галлон (Британия)</string>
+    <string name="density_oz_gal_uk_hint">Плотность в унциях на галлон (Британия)</string>
     <string name="time_seconds_hint">Время в секундах</string>
     <string name="time_nanoseconds_hint">Время в наносекундах</string>
     <string name="time_microseconds_hint">Время в микросекундах</string>
@@ -277,6 +298,25 @@ S.N.Pavlov 2025</string>
     <string name="unit_symbol_length_fathom">ftm</string>
     <string name="unit_symbol_length_nautical_mile_us">nmi (US)</string>
     <string name="unit_symbol_length_nautical_mile_uk">nmi (UK)</string>
+    <string name="density_symbol_kg_m3">кг/м³</string>
+    <string name="density_symbol_t_m3">т/м³</string>
+    <string name="density_symbol_g_m3">г/м³</string>
+    <string name="density_symbol_mg_m3">мг/м³</string>
+    <string name="density_symbol_kg_l">кг/л</string>
+    <string name="density_symbol_g_l">г/л</string>
+    <string name="density_symbol_g_ml">г/мл</string>
+    <string name="density_symbol_lb_yd3">lb/yd³</string>
+    <string name="density_symbol_lb_ft3">lb/ft³</string>
+    <string name="density_symbol_lb_in3">lb/in³</string>
+    <string name="density_symbol_lb_gal">lb/gal</string>
+    <string name="density_symbol_lb_bu">lb/bu</string>
+    <string name="density_symbol_oz_yd3">oz/yd³</string>
+    <string name="density_symbol_oz_ft3">oz/ft³</string>
+    <string name="density_symbol_oz_in3">oz/in³</string>
+    <string name="density_symbol_oz_gal">oz/gal</string>
+    <string name="density_symbol_oz_bu">oz/bu</string>
+    <string name="density_symbol_lb_gal_uk">lb/gal (UK)</string>
+    <string name="density_symbol_oz_gal_uk">oz/gal (UK)</string>
     <string name="unit_info_celsius">Градус Цельсия - широко распространённая единица температуры, применяемая в Международной системе единиц (СИ) наряду с кельвином.</string>
     <string name="unit_info_kelvin">Единица термодинамической температуры в Международной системе единиц (СИ), одна из семи основных единиц СИ.</string>
     <string name="unit_info_fahrenheit">Единица измерения температуры[1]. Назван в честь немецкого учёного Габриеля Фаренгейта, предложившего в 1724 году шкалу для измерения температуры.</string>
@@ -364,6 +404,44 @@ S.N.Pavlov 2025</string>
     <string name="unit_info_length_fathom">Фатом — глубинная единица, равная шести футам (1,8288 м).</string>
     <string name="unit_info_length_nautical_mile_us">Морская миля США исторически равнялась 1853,248 м.</string>
     <string name="unit_info_length_nautical_mile_uk">Британская морская миля равна 1853,184 м.</string>
+    <string name="density_info_kg_m3">кг/м³
+Базовая единица плотности СИ, килограмм на кубический метр.</string>
+    <string name="density_info_t_m3">т/м³
+Тонна массы, приходящаяся на один кубический метр объёма.</string>
+    <string name="density_info_g_m3">г/м³
+Грамм на кубический метр для разреженных смесей и газов.</string>
+    <string name="density_info_mg_m3">мг/м³
+Миллиграмм на кубический метр для очень малых концентраций.</string>
+    <string name="density_info_kg_l">кг/л
+Килограмм массы на один литр объёма.</string>
+    <string name="density_info_g_l">г/л
+Грамм массы, распределённый по литру объёма.</string>
+    <string name="density_info_g_ml">г/мл
+Грамм на миллилитр, совпадает с тысячей килограммов на кубометр.</string>
+    <string name="density_info_lb_yd3">lb/yd³
+Фунт на кубический ярд, англо-американская единица плотности.</string>
+    <string name="density_info_lb_ft3">lb/ft³
+Фунт массы, приходящийся на кубический фут объёма.</string>
+    <string name="density_info_lb_in3">lb/in³
+Фунт на кубический дюйм для очень плотных материалов.</string>
+    <string name="density_info_lb_gal">lb/gal
+Фунт на американский жидкостный галлон.</string>
+    <string name="density_info_lb_bu">lb/bu
+Фунт массы на один американский бушель объёма.</string>
+    <string name="density_info_oz_yd3">oz/yd³
+Унция массы, распределённая по кубическому ярду.</string>
+    <string name="density_info_oz_ft3">oz/ft³
+Унция на кубический фут для лёгких материалов.</string>
+    <string name="density_info_oz_in3">oz/in³
+Унция на кубический дюйм.</string>
+    <string name="density_info_oz_gal">oz/gal
+Унция на американский галлон.</string>
+    <string name="density_info_oz_bu">oz/bu
+Унция массы на американский бушель.</string>
+    <string name="density_info_lb_gal_uk">lb/gal (UK)
+Фунт массы на британский галлон.</string>
+    <string name="density_info_oz_gal_uk">oz/gal (UK)
+Унция массы на британский галлон.</string>
     <string name="pressure_info_kpa">Килопаскаль — одна тысяча Паскалей.</string>
     <string name="pressure_info_mpa">Мегапаскаль — один миллион Паскалей.</string>
     <string name="pressure_info_n_m2">Ньютон на квадратный метр эквивалентен Паскалю.</string>
